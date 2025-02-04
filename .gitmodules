@@ -1,0 +1,6 @@
+[submodule "eliza"]
+	path = eliza
+	url = https://github.com/augchan42/eliza.git
+[submodule "teahouse-terminal"]
+	path = teahouse-terminal
+	url = https://github.com/augchan42/teahouse-terminal.git
