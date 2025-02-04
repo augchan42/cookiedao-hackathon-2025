@@ -10,10 +10,7 @@ This project integrates AI capabilities with various blockchain networks and Web
 
 - Multi-chain support including Solana, Ethereum, Avalanche, and more
 - AI-powered trading and market analysis
-- NFT generation and collection management
-- Decentralized storage integration
-- Cross-chain bridging capabilities
-- Secure TEE (Trusted Execution Environment) integration
+- EchoChambers integration
 
 ## Getting Started
 
