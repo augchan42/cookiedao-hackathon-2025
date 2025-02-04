@@ -1,12 +1,33 @@
 {
   "name": "cookiedao-hackathon-2025",
   "version": "1.0.0",
-  "main": "index.js",
+  "private": true,
+  "description": "Cookie DataSwarm Hackathon 2025 Project - AI x Crypto Integration",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "pnpm -r run build",
+    "dev": "pnpm -r run dev",
+    "start": "pnpm -r run start",
+    "clean": "pnpm -r run clean",
+    "test": "pnpm -r run test",
+    "lint": "pnpm -r run lint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "keywords": [
+    "cookie",
+    "dataswarm",
+    "ai",
+    "crypto",
+    "eliza",
+    "echochambers",
+    "hackathon"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "engines": {
+    "node": ">=23.3.0",
+    "pnpm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/augchan42/cookiedao-hackathon-2025.git"
+  }
 }

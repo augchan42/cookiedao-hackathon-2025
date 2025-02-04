@@ -1,0 +1,3 @@
+packages:
+  - 'eliza/packages/*'
+  - 'echochambers'
