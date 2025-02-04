@@ -6,6 +6,25 @@ A Web3-enabled AI agent system built for the Cookie DataSwarm Hackathon 2025, fo
 
 This project integrates AI capabilities with various blockchain networks and Web3 protocols, leveraging the Eliza OS framework to create intelligent agents that can interact with decentralized systems.
 
+## Project Structure
+
+This repository is organized as a monorepo using pnpm workspaces and git submodules:
+
+```
+cookiedao-hackathon-2025/
+├── eliza/                 # Eliza OS Framework (submodule)
+│   └── packages/         
+├── teahouse-terminal/     # Terminal Interface (submodule)
+├── package.json
+└── pnpm-workspace.yaml
+```
+
+### Submodules
+
+This project uses the following git submodules:
+- `eliza` - The Eliza OS Framework for AI agent development
+- `teahouse-terminal` - Terminal interface for agent interactions
+
 ## Features
 
 - Multi-chain support including Solana, Ethereum, Avalanche, and more
@@ -14,26 +33,49 @@ This project integrates AI capabilities with various blockchain networks and Web
 
 ## Getting Started
 
-1. Clone the repository:
+1. Clone the repository with submodules:
 ```bash
-git clone https://github.com/augchan42/cookiedao-hackathon-2025.git
+git clone --recursive https://github.com/augchan42/cookiedao-hackathon-2025.git
 cd cookiedao-hackathon-2025
 ```
 
-2. Install dependencies:
+2. If you already cloned without `--recursive`, initialize submodules:
+```bash
+git submodule init
+git submodule update
+```
+
+3. Install dependencies:
 ```bash
 pnpm install
 ```
 
-3. Copy and configure environment variables:
+4. Copy and configure environment variables:
 ```bash
 cp .env.example .env
 ```
 
-4. Build and start the project:
+5. Build and start the project:
 ```bash
 pnpm build
 pnpm start
+```
+
+### Updating Submodules
+
+To update all submodules to their latest commits:
+```bash
+git submodule update --remote
+```
+
+To update a specific submodule:
+```bash
+cd eliza  # or teahouse-terminal
+git checkout master
+git pull
+cd ..
+git add eliza
+git commit -m "Update eliza submodule"
 ```
 
 ## Tech Stack
