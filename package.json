@@ -29,5 +29,13 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/augchan42/cookiedao-hackathon-2025.git"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "puppeteer": "^24.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "@types/puppeteer": "^5.4.7"
   }
 }

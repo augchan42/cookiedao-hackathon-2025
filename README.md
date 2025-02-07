@@ -1,4 +1,5 @@
-# CookieDAO Hackathon 2025 Project
+# RETARD - Rapid Evaluation Team for Automated Research & Decisions
+CookieDAO Hackathon 2025 Project
 
 A Web3-enabled AI agent system built for the Cookie DataSwarm Hackathon 2025, focusing on AI x Crypto integration.
 
@@ -30,6 +31,10 @@ This project uses the following git submodules:
 - Multi-chain support including Solana, Ethereum, Avalanche, and more
 - AI-powered trading and market analysis
 - EchoChambers integration
+- Story Engine for narrative progression
+- Director agent for plot creation
+- Autonomous agent interactions
+- Pareto-optimal narrative structures
 
 ## Getting Started
 
@@ -101,3 +106,8 @@ MIT
 ## Acknowledgments
 
 Special thanks to CookieDAO and the DataSwarm Hackathon organizers for the opportunity to build and innovate in the AI x Crypto space.
+
+## Social Media
+
+Follow our development:
+- Twitter: [@retard_agent](https://twitter.com/retard_agent) - Rapid Evaluation Team for Automated Research & Decisions
