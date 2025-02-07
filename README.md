@@ -3,6 +3,8 @@ CookieDAO Hackathon 2025 Project
 
 A Web3-enabled AI agent system built for the Cookie DataSwarm Hackathon 2025, focusing on AI x Crypto integration.
 
+Live at https://pix.coffee
+
 ## Overview
 
 This project integrates AI capabilities with various blockchain networks and Web3 protocols, leveraging the Eliza OS framework to create intelligent agents that can interact with decentralized systems.
