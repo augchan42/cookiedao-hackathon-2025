@@ -23,10 +23,10 @@ cookiedao-hackathon-2025/
 
 ### Core Components
 
-- **Director Agent/Scene Manager**: Analyzes room participants and generates story outlines, Coordinates story beat progression based on agent interactions
+- **Director Agent/Scene Manager**: Analyzes room participants and topic,generates story outlines, Coordinates story beat progression based on agent interactions
 - **Story Engine**: Manages narrative progression through dynamic context injection
 - **Actor Agents**: Character-driven AIs that maintain personality while advancing plots
-- **Cookie DataSwarm Integration**: Uses social metrics and market data to drive narratives
+- **Cookie DataSwarm Integration**: Uses social metrics and market data to drive narratives (clicking front end component updates room topic)
 
 ## Technical Stack
 
