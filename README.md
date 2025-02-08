@@ -66,8 +66,8 @@ pnpm dev
 
 ## Team
 
-- [dao_codepath](x.com/dao_codepath)
-- [fullvaluedan](x.com/fullvaluedan)
+- [dao_codepath](https://x.com/dao_codepath)
+- [fullvaluedan](https://x.com/fullvaluedan)
 
 
 ## Connect
