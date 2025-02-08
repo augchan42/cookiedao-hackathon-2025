@@ -1,115 +1,79 @@
-# RETARD - Rapid Evaluation Team for Automated Research & Decisions
+# R.E.T.A.R.D. - Rapid Evaluation Team for Automated Research & Decisions
 CookieDAO Hackathon 2025 Project
 
-A Web3-enabled AI agent system built for the Cookie DataSwarm Hackathon 2025, focusing on AI x Crypto integration.
+An AI narrative engine that coordinates agent swarms to create coherent stories by analyzing crypto market dynamics. Built for the Cookie DataSwarm Hackathon 2025.
 
 Live at https://pix.coffee
 
 ## Overview
 
-This project integrates AI capabilities with various blockchain networks and Web3 protocols, leveraging the Eliza OS framework to create intelligent agents that can interact with decentralized systems.
+Unlike typical pre-scripted AI shows, R.E.T.A.R.D. creates dynamic narratives driven by real-time market data and social sentiment analysis. The system uses Cookie DataSwarm APIs to inform character behaviors and story progression, currently using "It's Always Sunny in Philadelphia" as its narrative framework.
 
-## Project Structure
+Example: When the gang discovers a new meme coin, each AI agent responds authentically - Dennis analyzes market psychology, Charlie finds conspiracy patterns in the data, and Frank looks for exploitation opportunities.
 
-This repository is organized as a monorepo using pnpm workspaces and git submodules:
+## Architecture
+
+The project consists of three main components:
 
 ```
 cookiedao-hackathon-2025/
-├── eliza/                 # Eliza OS Framework (submodule)
-│   └── packages/         
-├── teahouse-terminal/     # Terminal Interface (submodule)
-├── package.json
-└── pnpm-workspace.yaml
+├── eliza/                 # Modified ElizaOS Framework for agent coordination (main logic here)
+└── echochambers/         # Forked chat server with story progression (custom tables and endpoints for story management)
 ```
 
-### Submodules
+### Core Components
 
-This project uses the following git submodules:
-- `eliza` - The Eliza OS Framework for AI agent development
-- `teahouse-terminal` - Terminal interface for agent interactions
+- **Director Agent/Scene Manager**: Analyzes room participants and generates story outlines, Coordinates story beat progression based on agent interactions
+- **Story Engine**: Manages narrative progression through dynamic context injection
+- **Actor Agents**: Character-driven AIs that maintain personality while advancing plots
+- **Cookie DataSwarm Integration**: Uses social metrics and market data to drive narratives
 
-## Features
+## Technical Stack
 
-- Multi-chain support including Solana, Ethereum, Avalanche, and more
-- AI-powered trading and market analysis
-- EchoChambers integration
-- Story Engine for narrative progression
-- Director agent for plot creation
-- Autonomous agent interactions
-- Pareto-optimal narrative structures
+- **Agent Framework**: Modified ElizaOS for agent coordination
+- **Server**: Forked EchoChambers with story progression endpoints
+- **Database**: PostgreSQL for story state and scene management
+- **APIs**: Cookie DataSwarm for market sentiment and social metrics
 
 ## Getting Started
 
-1. Clone the repository with submodules:
+1. Clone the repositories:
 ```bash
 git clone --recursive https://github.com/augchan42/cookiedao-hackathon-2025.git
-cd cookiedao-hackathon-2025
 ```
 
-2. If you already cloned without `--recursive`, initialize submodules:
-```bash
-git submodule init
-git submodule update
-```
-
-3. Install dependencies:
+2. Install dependencies:
 ```bash
 pnpm install
 ```
 
-4. Copy and configure environment variables:
+3. Configure environment:
 ```bash
 cp .env.example .env
+# Add your Cookie DataSwarm API keys
 ```
 
-5. Build and start the project:
+4. Start the services:
 ```bash
-pnpm build
-pnpm start
+pnpm dev
 ```
 
-### Updating Submodules
+## Current Status
 
-To update all submodules to their latest commits:
-```bash
-git submodule update --remote
-```
-
-To update a specific submodule:
-```bash
-cd eliza  # or teahouse-terminal
-git checkout master
-git pull
-cd ..
-git add eliza
-git commit -m "Update eliza submodule"
-```
-
-## Tech Stack
-
-- Next.js 14 (App Router)
-- Eliza OS Framework
-- EchoChambers Chat Server
-
-## Requirements
-
-- Node.js >=23.3.0
-- pnpm >=8.0.0
-
-## License
-
-MIT
+- Live demo at https://pix.coffee
+- Currently using "It's Always Sunny" as the narrative framework
+- Actively developing director agent
 
 ## Team
 
 - [dao_codepath]
-- [fullvaluedan]
+- [fullvaluedan] 
 
-## Acknowledgments
+## Connect
 
-Special thanks to CookieDAO and the DataSwarm Hackathon organizers for the opportunity to build and innovate in the AI x Crypto space.
+- Twitter: [@retard_agent](https://twitter.com/retard_agent)
+- Demo: [pix.coffee](https://pix.coffee)
 
-## Social Media
+## License
 
-Follow our development:
-- Twitter: [@retard_agent](https://twitter.com/retard_agent) - Rapid Evaluation Team for Automated Research & Decisions
+MIT
